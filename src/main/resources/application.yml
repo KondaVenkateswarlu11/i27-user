@@ -12,7 +12,7 @@ spring:
     #    password: 
     #    
     password: Friend123
-    url: jdbc:mysql://db-project-user.c94mea0coczg.us-east-1.rds.amazonaws.com:3306/product_managment?useSSL=FALSE
+    url: jdbc:mysql://localhost:3306/product_managment?useSSL=FALSE
     username: admin
   jpa:
     hibernate:
@@ -48,5 +48,5 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://54.145.249.112:5761//eureka/
 
