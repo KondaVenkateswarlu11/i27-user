@@ -26,4 +26,27 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    #    password: 
+    #    
+    password: Friend123
+    url: jdbc:mysql://db-project-user.c94mea0coczg.us-east-1.rds.amazonaws.com:3306/product_managment?useSSL=FALSE
+    username: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8232
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
