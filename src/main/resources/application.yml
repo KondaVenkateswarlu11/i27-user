@@ -11,9 +11,9 @@ spring:
   datasource:
     #    password: 
     #    
-    password: root
+    password: Friend123
     url: jdbc:mysql://db-project-user.c94mea0coczg.us-east-1.rds.amazonaws.com:3306/product_managment?useSSL=FALSE
-    username: root
+    username: admin
   jpa:
     hibernate:
       ddl-auto: update
